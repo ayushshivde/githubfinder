@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-900 text-white flex items-center justify-center px-4">
+        <div class=" w-full max-w-3xl">
+          <div class=" flex flex-col items-center justify-center">
+            <!-- Header -->
+            <h1 class="text-4xl font-bold text-center mb-8">GitHub Profile Finder</h1>
+      
+            <!-- Search Bar -->
+            <div class="flex flex-col sm:flex-row gap-4 w-full mb-10">
+              <input
+                type="text"
+                placeholder="Enter GitHub username..."
+                class="flex-1 px-4 py-3 rounded-xl bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                id="searchInput"
+              />
+              <button
+              type="submit"
+                class="  py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition"
+                id="searchButton"
+              >
+                Search
+              </button>
+            </div>
+      
+            <div class="card">
+                <div class="bg-gray-800 rounded-2xl object-cover shadow-xl p-4 md:p-10 flex flex-col md:flex-row  items-center gap-6 w-full " id="profileCard">
+                    <!-- Profile Image -->
+                    <!-- <img
+                     
+              
+                      class="w-32 h-32 rounded-full animate-pulse bg-gray-700"
+                      id="profileImage"
+                    /> -->
+                    <div class="w-32 h-32 rounded-full animate-pulse bg-gray-700"></div>
+                  
+                    <!-- Profile Info -->
+                    <div class="flex-1 space-y-2 text-center md:text-left">
+                      <h2 class="text-2xl font-bold" id="profileName"></h2>
+                      <p class="text-gray-300" id="bio"></p>
+                  
+                      <div class="flex flex-wrap justify-evenly md:justify-start gap-4 mt-4">
+
+                        <div class="  animate-pulse bg-gray-700 md:px-4  w-100 md:w-64 h-10 py-2 rounded-xl text-sm font-medium">
+                          <span class="text-gray-400 "></span> <span id="followers"></span>
+                        </div>
+                      
+                        <div class=" animate-pulse bg-gray-700 px-4 py-2  w-100 rounded-xl text-sm font-medium">
+                          <span class="text-gray-400"></span> <span id="repos"></span>
+                        </div>
+                        <div class=" animate-pulse bg-gray-700 px-4 py-2 w-64 h-8 rounded-xl text-sm font-medium">
+                          <span class="text-gray-400"></span> <span id="location"></span>
+                        </div>
+                        <div class=" animate-pulse bg-gray-700 px-4 w-32 md:w-48 py-2 rounded-xl text-sm font-medium">
+                            <span class="text-gray-400"></span> <span id="following"></span>
+                          </div>
+                      </div>
+                  
+                   
+                  
+                      </a>
+                    </div>
+                  </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+    <script src="githubFinder.js"></script>
+</body>
+</html>
